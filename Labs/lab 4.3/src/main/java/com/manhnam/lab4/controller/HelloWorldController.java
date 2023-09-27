@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.Date;
 
 @Controller
-public class HomeController {
+public class HelloController {
 	@GetMapping ("/hello")
 	public String sayHello(Model theModel) {
 		theModel.addAttribute("theDate", new Date());
