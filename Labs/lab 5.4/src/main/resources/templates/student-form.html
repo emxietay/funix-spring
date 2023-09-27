@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 5</title>
+</head>
+<body>
+
+<h1>SUCCESSFUL REQUEST!</h1>
+<h1>Hello Again</h1>
+
+<form th:action="${showForm}" th:object="${student}" method="POST">
+    First name:
+        <input th:field="*{firstName}" type="text" />
+    <br><br>
+    Last name:
+        <input th:field="*{lastName}" type="text" />
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
